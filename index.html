@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h2>
+            Bookshelf Apps
+        </h2>
+    </header>
+
+    <section>
+        <article>
+            <h2>Tambah buku</h2>
+            <form class="form" action="#" id="form">
+                <div class="input-group">
+                    <label for="title">Judul</label>
+                    <input type="text" id="title" name="title" placeholder="Masukkan Judul Buku" required>
+                </div>
+                <div class="input-group">
+                    <label for="title">Penulis</label>
+                    <input type="text" id="author" name="title" placeholder="Masukkan Nama Penulis" required>
+                </div>
+                <div class="input-group">
+                    <label for="date">Tahun Terbit</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="input-inline">
+                    <label for="inputBookIsComplete">Selesai dibaca</label>
+                    <input id="inputBookIsComplete" type="checkbox">
+                </div>
+                <input type="submit" value="Masukkan Buku" name="Submit" class="btn-submit">
+            </form>
+        </article>
+        <div class="wrapper">
+            <article>
+                <h2>Belum selesai dibaca</h2>
+                <div class="list-item" id="books">
+
+                </div>
+            </article>
+            <article>
+                <h2>Selesai dibaca</h2>
+                <div class="list-item" id="completed-books">
+
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <script src="assets/js/data.js" type="text/javascript"></script>
+    <script src="assets/js/dom.js" type="text/javascript"></script>
+    <script src="assets/js/script.js" type="text/javascript"></script>
+</body>
+
+</html>

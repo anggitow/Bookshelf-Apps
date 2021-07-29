@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #a0937d;
+  padding: 6px 0 6px 20px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+section h2 {
+  color: #a0937d;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+article {
+  border-radius: 8px;
+  margin: 15px 10px;
+  background: #f9f9f9;
+  padding: 15px 10px;
+  flex-grow: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: fit-content;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-size: 18;
+  font-weight: lighter;
+}
+
+.input-inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input-inline > label {
+  color: #a0937d;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.btn-submit {
+  width: fit-content;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 16px;
+  padding: 8px 16px;
+  border: 2px solid #a0937d;
+  color: #000000;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: #a0937d;
+  color: #fff;
+}
+
+input[type="text"],
+input[type="date"] {
+  border: 1px solid;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="date"] .btn-submit:focus {
+  outline: none;
+}
+
+.list-item {
+  overflow-y: scroll;
+  height: 70%;
+}
+
+.item {
+  border-radius: 16px;
+  margin-top: 10px;
+  padding: 12px 24px 12px 24px;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.item h3,
+.item h5,
+.item p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.item h3 {
+  color: #a0937d;
+}
+
+.shadow {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+.check-button {
+  background: url("../svg/check-outline.svg");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.check-button:hover {
+  background: url("../svg/check-solid.svg");
+  background-size: contain;
+}
+
+.trash-button {
+  background: url("../svg/trash-outline.svg");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.trash-button:hover {
+  background: url("../svg/trash-fill.svg");
+  background-size: contain;
+}
+
+.undo-button {
+  background: url("../svg/undo-ouline.svg");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.check-button:focus,
+.trash-button {
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper {
+    margin-top: 30px;
+  }
+}
